@@ -11,11 +11,15 @@ namespace SS
 {
     class ConnectingSocket : public SimpleSocket
     {
+    private:
+        int connection;
+        void connect_to_network();
+
     public:
         //Constructor
         ConnectingSocket(int domain, int service, int protocol, int port, u_long interface);
         //Virtual function from parent
-        int connect_to_network(int sock, struct sockaddr_in address);
+        void connect_to_network(int sock, struct sockaddr_in address);
     };
 }
 

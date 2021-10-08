@@ -32,14 +32,3 @@ int SS::SimpleSocket::get_sock()
 {
     return sock;
 }
-
-int SS::SimpleSocket::get_connection()
-{
-    return connection;
-}
-
-//Setter functions
-void SS::SimpleSocket::set_connection(int con)
-{
-    connection = con;
-}
