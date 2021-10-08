@@ -17,7 +17,7 @@ void SS::TestServer::handler()
 }
 void SS::TestServer::responder()
 {
-    char *hello = "Hello from server";
+    char *hello = "HTTP/1.1 200 OK\nContent-Type: text/plain\nContent-Length: 12\n\nHello world!";
     write(new_socket, hello, strlen(hello));
     close(new_socket);
 }
