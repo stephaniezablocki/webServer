@@ -9,7 +9,7 @@ namespace SS
     class TestClient : public SimpleClient
     {
     private:
-        int new_socket;
+        int sock;
         char buffer[1024] = {0};
         void requester();
         void handler();
