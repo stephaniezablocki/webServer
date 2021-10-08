@@ -14,8 +14,8 @@ namespace SS
     {
     private:
         ConnectingSocket *socket;
-        virtual void requester();
-        virtual void handler();
+        virtual void requester() = 0;
+        virtual void handler() = 0;
 
     public:
         SimpleClient(int domain, int service, int protocol, int port, char *interface);
