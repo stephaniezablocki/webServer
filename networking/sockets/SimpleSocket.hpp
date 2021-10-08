@@ -16,7 +16,7 @@ namespace SS
 
     public:
         //Constructor
-        SimpleSocket(int domain, int service, int protocol, int port, u_long interface);
+        SimpleSocket(int domain, int service, int protocol, int port, in_addr_t interface);
         //Virtual function to connect to a network
         virtual void connect_to_network(int sock, struct sockaddr_in address) = 0;
         //Function to test sockets and connections

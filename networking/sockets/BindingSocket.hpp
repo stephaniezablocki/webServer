@@ -17,7 +17,7 @@ namespace SS
 
     public:
         //Constructor
-        BindingSocket(int domain, int service, int protocol, int port, u_long interface);
+        BindingSocket(int domain, int service, int protocol, int port, in_addr_t interface);
         //Virtual function from parent
         int get_binding();
     };
