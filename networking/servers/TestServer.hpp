@@ -2,6 +2,7 @@
 #define TestServer_hpp
 
 #include <stdio.h>
+#include <fstream>
 #include "SimpleServer.hpp"
 
 namespace SS
